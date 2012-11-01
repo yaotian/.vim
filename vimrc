@@ -1,5 +1,7 @@
 source ~/.vim/bundles.vim
 
+let mapleader=","
+
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
@@ -181,8 +183,15 @@ autocmd FileType c setlocal omnifunc=ccomplete#Complete
 
 " SuperTab
 "let g:SuperTabDefultCompletionType='context'
-let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
-let g:SuperTabRetainCompletionType=2
+
+"let g:SuperTabDefaultCompletionType = '<C-X><C-U>' yt
+"let g:SuperTabRetainCompletionType=2 yt
+
+"----------------
+"解决tab 冲突
+"----------------
+let g:SuperTabMappingForward="<C-tab>"    
+let g:SuperTabMappingBackward="<C-s-tab>"
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux

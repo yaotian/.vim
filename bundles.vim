@@ -93,4 +93,10 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 
+"-------------
+" golang
+" ------------
+
+Bundle 'jnwhiteh/vim-golang'
+
 filetype plugin indent on     " required!
