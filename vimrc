@@ -184,14 +184,15 @@ autocmd FileType c setlocal omnifunc=ccomplete#Complete
 " SuperTab
 "let g:SuperTabDefultCompletionType='context'
 
-"let g:SuperTabDefaultCompletionType = '<C-X><C-U>' yt
-"let g:SuperTabRetainCompletionType=2 yt
+let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
+let g:SuperTabRetainCompletionType=2
 
 "----------------
 "解决tab 冲突
 "----------------
-let g:SuperTabMappingForward="<C-tab>"    
-let g:SuperTabMappingBackward="<C-s-tab>"
+"将snipMate的triger key 修改了
+let g:snips_trigger_key='<c-s-j>'
+let g:snips_trigger_key_backwards='<c-s-a-j>'
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux

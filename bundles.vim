@@ -98,5 +98,6 @@ Bundle 'chriskempson/vim-tomorrow-theme'
 " ------------
 
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'nsf/gocode', {'rtp': 'vim/'}
 
 filetype plugin indent on     " required!
