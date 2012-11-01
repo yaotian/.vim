@@ -241,3 +241,7 @@ if has("gui_running")
     map <D-9> 9gt
     map <D-0> :tablast<CR>
 endif
+
+set rtp+=$GOROOT/misc/vim
+autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist 
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
