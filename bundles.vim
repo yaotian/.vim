@@ -52,7 +52,8 @@ Bundle 'scrooloose/syntastic'
 "-------------
 " Other Utils
 " ------------
-Bundle 'humiaozuzu/fcitx-status'
+" Bundle 'humiaozuzu/fcitx-status'
+" remote this because it make leader timeoutlen too short
 Bundle 'nvie/vim-togglemouse'
 
 "----------------------------------------
@@ -92,6 +93,7 @@ Bundle 'rickharris/vim-monokai'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'ap/vim-css-color' 
 
 "-------------
 " golang
@@ -101,3 +103,10 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
 
 filetype plugin indent on     " required!
+
+
+"--------------
+" Other tools
+" -------------
+
+Bundle 'vim-scripts/vimwiki'
