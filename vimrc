@@ -2,12 +2,27 @@ source ~/.vim/bundles.vim
 
 let mapleader=","
 
+"-----------------------
+" Quick Open Files
+" -----------------------
+map <silent> <leader>ee :e ~/.vimrc<cr>
+"When .vimrc is edited, reload it
+"autocmd! bufwritepost .vimrc source ~/.vimrc "
+map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+map <silent> <leader>go :e ~/.vim/bundle/snipmate-snippets/snippets/go.snippets<cr>
+map <silent> <leader>dj :e ~/.vim/bundle/snipmate-snippets/snippets/django.snippets<cr>
+map <silent> <leader>dj :e ~/.vim/bundle/snipmate-snippets/snippets/django.snippets<cr>
+map <silent> <leader>py :e ~/.vim/bundle/snipmate-snippets/snippets/python.snippets<cr>
+
+
+
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
 " enable filetype dectection and ft specific plugin/indent
 filetype plugin indent on
-
+  
 " enable syntax hightlight and completion 
 syntax enable
 syntax on
@@ -111,7 +126,7 @@ hi Tb_VisibleNormal ctermbg=252 ctermfg=235
 hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
 
 " easy-motion
-let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_leader_key = '\'
 
 " Tagbar
 let g:tagbar_left=1
@@ -206,6 +221,9 @@ nmap <F4> :IndentGuidesToggle<cr>
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
 
+nmap <leader>n :NERDTreeToggle<cr>
+nmap <leader>t :TagbarToggle<cr>
+
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
@@ -213,12 +231,12 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 " eggcache vim
-:command W w
-:command WQ wq
-:command Wq wq
-:command Q q
-:command Qa qa
-:command QA qa
+":command W w
+":command WQ wq
+":command Wq wq
+":command Q q
+":command Qa qa
+":command QA qa
 
 " for macvim
 if has("gui_running")
@@ -241,3 +259,9 @@ if has("gui_running")
     map <D-9> 9gt
     map <D-0> :tablast<CR>
 endif
+
+" setup for golang
+set rtp+=$GOROOT/misc/vim
+autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist 
+autocmd FileType go autocmd BufWritePre <buffer> Fmt   "automatically format the code"
+
