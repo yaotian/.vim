@@ -52,7 +52,7 @@ Bundle 'scrooloose/syntastic'
 "-------------
 " Other Utils
 " ------------
-Bundle 'humiaozuzu/fcitx-status'
+"Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
 "----------------------------------------
