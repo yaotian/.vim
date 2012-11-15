@@ -59,7 +59,7 @@ set backspace=indent,eol,start                                    " More powerfu
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
-set nowrap                                                        " dont wrap lines
+"set nowrap                                                        " dont wrap lines
 set scrolloff=2                                                   " 2 lines above/below cursor when scrolling
 set number                                                        " show line numbers
 set showmatch                                                     " show matching bracket (briefly jump)
