@@ -102,6 +102,12 @@ Bundle 'nsf/gocode', {'rtp': 'vim/'}
 
 filetype plugin indent on     " required!
 
+"-------------
+" Python
+" ------------
+Bundle 'cburroughs/pep8'
+Bundle 'vim-scripts/pydoc.vim'
+Bundle 'jmcantrell/vim-virtualenv'
 
 "--------------
 " Other tools
