@@ -1,4 +1,4 @@
-Maple's Vim config
+'s Vim config
 ==================
 
 I use `vundle` to manage my plugins, which makes my `.vim` directory clean
@@ -46,8 +46,8 @@ sudo apt-get install vim-gtk               # Ubuntu
 
 ### Screenshots
 
-![Completions](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/completions.gif)
-![Snippets](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/snippets.gif)
+![Completions](https://raw.github.com/yaotian/.vim/master/screenshots/completions.gif)
+![Snippets](https://raw.github.com/yaotian/.vim/master/screenshots/snippets.gif)
 
 #### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
@@ -93,7 +93,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 ## IDE features
 
 * [nerdtree](http://github.com/scrooloose/nerdtree) - A tree explorer plugin for navigating the filesystem.
-* [tabbar](http://github.com/humiaozuzu/TabBar) -  Add tab bar and quickt tab switch with alt+1~9.
+* [tabbar](http://github.com/yaotian/TabBar) -  Add tab bar and quickt tab switch with alt+1~9.
 * [tagbar](http://github.com/majutsushi/tagbar) - Displays the tags of the current file in a sidebar.
 * [ack-vim](http://github.com/mileszs/ack.vim) - Front for the Perl module App::Ack.
 * [ctrlp](https://github.com/kien/ctrlp.vim) - Fuzzy file, buffer, mru and tag finder.
@@ -149,12 +149,12 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 ### Screenshots
 
-![Vim IDE 1](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/vim.jpg)
-![Vim IDE 2](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/vim2.jpg)
+![Vim IDE 1](https://raw.github.com/yaotian/.vim/master/screenshots/vim.jpg)
+![Vim IDE 2](https://raw.github.com/yaotian/.vim/master/screenshots/vim2.jpg)
 
 ## Other Utils
 
-* [fcitx-status](https://github.com/humiaozuzu/fcitx-status) - automatic change status of fcitx in vim.
+* [fcitx-status](https://github.com/yaotian/fcitx-status) - automatic change status of fcitx in vim.
 * [togglemouse](https://github.com/nvie/vim-togglemouse/) - Toggles the mouse focus between Vim and your terminal emulator, allowing terminal emulator mouse commands, like copy/paste.
 
 ### Shortcuts
@@ -201,7 +201,7 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 2. Clone and install this repo:
 
-        git clone git://github.com/yaotian/dot-vimrc.git ~/.vim
+        git clone git://github.com/yaotian/.vim.git ~/.vim
         ln -s ~/.vim/vimrc ~/.vimrc
         
 3. Setup `Vundle`:
