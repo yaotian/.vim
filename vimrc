@@ -80,6 +80,8 @@ set softtabstop=4   " backspace &
 set shiftwidth=4    " indent width
 "set textwidth=79
 set expandtab       " expand tab to space
+
+
 autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79
@@ -120,6 +122,7 @@ autocmd Syntax lisp,scheme,clojure,racket RainbowParenthesesToggle
 " tabbar
 let g:Tb_MaxSize = 2
 let g:Tb_TabWrap = 1
+
 hi Tb_Normal guifg=white ctermfg=white
 hi Tb_Changed guifg=green ctermfg=green
 hi Tb_VisibleNormal ctermbg=252 ctermfg=235
@@ -206,8 +209,8 @@ let g:SuperTabRetainCompletionType=2
 "解决tab 冲突
 "----------------
 "将snipMate的triger key 修改了
-let g:snips_trigger_key='<c-s-j>'
-let g:snips_trigger_key_backwards='<c-s-a-j>'
+"let g:snips_trigger_key='<C-S-j>'
+"let g:snips_trigger_key_backwards='<C-S-a-j>'
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
