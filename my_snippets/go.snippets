@@ -124,13 +124,18 @@ snippet fr
 	for ${1:k}, ${2:v} := range ${3} {
 		${4:/* code */}
 	}
+# function test
+snippet funt
+	func Test${1:funcName}(t *testing.T) {
+		${2}
+	}
 # function simple 
 snippet fun
 	func ${1:funcName}(${2}) ${3:os.Error} {
 		${4:/* code */}
 	}
 # function on receiver 
-snippet fum
+snippet funs
 	func (self ${1:type}) ${2:funcName}(${3}) ${4:os.Error} {
 		${5:/* code */}
 	}

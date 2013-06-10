@@ -14,6 +14,7 @@ map <silent> <leader>go :e ~/.vim/bundle/snipmate-snippets/snippets/go.snippets<
 map <silent> <leader>dj :e ~/.vim/bundle/snipmate-snippets/snippets/django.snippets<cr>
 map <silent> <leader>dj :e ~/.vim/bundle/snipmate-snippets/snippets/django.snippets<cr>
 map <silent> <leader>py :e ~/.vim/bundle/snipmate-snippets/snippets/python.snippets<cr>
+map <silent> <leader>html :e ~/.vim/bundle/snipmate-snippets/snippets/html.snippets<cr>
 
 
 
@@ -162,6 +163,35 @@ if executable('coffeetags')
     \ }
 endif
 
+" tag for golang
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
 " Nerd Tree 
 let NERDChristmasTree=0
 let NERDTreeWinSize=30
@@ -268,3 +298,28 @@ set rtp+=$GOROOT/misc/vim
 autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist 
 autocmd FileType go autocmd BufWritePre <buffer> Fmt   "automatically format the code"
 
+
+" this is for the text aligning
+nmap <Leader>w= :Tabularize /=<CR>
+vmap <Leader>w= :Tabularize /=<CR>
+nmap <Leader>w: :Tabularize /:<CR>
+nmap <Leader>w: :Tabularize /:<CR>
+vmap <Leader>w:: :Tabularize /:\zs<CR>
+vmap <Leader>w:: :Tabularize /:\zs<CR>
+
+" This is for the text aligning each time if you type '|'
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+ 
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
+
+" 粘贴代码，代码前会自动加indent，解决这个问题的
+:set pastetoggle=<F10>

@@ -19,6 +19,7 @@ Bundle 'mattn/zencoding-vim'
 " snipmate dependencies
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
+Bundle 'vim-scripts/UltiSnips'
 
 "-----------------
 " Fast navigation
@@ -71,6 +72,18 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 "Bundle 'groenewege/vim-less'
 "Bundle 'wavded/vim-stylus'
+Bundle 'vim-scripts/jsbeautify'
+Bundle 'vim-scripts/HTML-AutoCloseTag'
+
+"对代码进行对其
+Bundle 'godlygeek/tabular'
+
+Bundle 'walm/jshint.vim'
+
+
+" Json
+Bundle 'vim-scripts/JSON.vim'
+
 
 " markup language
 Bundle 'tpope/vim-markdown'
@@ -114,3 +127,7 @@ Bundle 'jmcantrell/vim-virtualenv'
 " -------------
 
 Bundle 'vim-scripts/vimwiki'
+
+"对齐
+Bundle 'godlygeek/tabular'
+
