@@ -1,0 +1,9 @@
+snippet current_dir "到当前目录 !b 
+file, _ := exec.LookPath(os.Args[0])
+dir, _ := path.Split(file)
+os.Chdir(dir)
+endsnippet
+
+snippet print "fmt print" !b
+var out = fmt.Println
+endsnippet
