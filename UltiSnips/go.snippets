@@ -7,3 +7,8 @@ endsnippet
 snippet print "fmt print" !b
 var out = fmt.Println
 endsnippet
+
+snippet not_dead "让select中的死循环别block" !b
+case <-time.After(time.Minute * 1):
+	out("Hi Robot, Pleas Wake up")
+endsnippet
