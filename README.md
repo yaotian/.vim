@@ -30,7 +30,6 @@ Such as completions for variable names and function names(neocomplcache), expand
 * `shift + Tab` -> This is really the Tab
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
 * `Ctrl` + `tab` -> Call ultimate snippets list
-
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
 
 ### Dependencies
@@ -115,7 +114,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 yaourt -S ack ctags                  # ArchLinux
 sudo apt-get install ack-grep ctags  # Ubuntu
 brew install ack ctags               # OS X
-sudo easy_install autopep8
+sudo easy_install autopep8           # This is for code format
 
 ```
 
