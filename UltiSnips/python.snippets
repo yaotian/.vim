@@ -1,0 +1,89 @@
+snippet dj_model_import "init dj model import" !b
+from django.db import models
+from django.contrib.auth.models import User
+
+endsnippet
+
+
+snippet todo_model "new dj model" !b
+class Todo(models.Model):
+    user = models.ForeignKey(User)
+    todo = models.CharField(max_length=50)
+    completed = models.BooleanField(default=False)
+    priority = models.IntegerField(default=3)
+    pubtime = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return u'%d %s %s' % (self.id, self.todo, self.flag)
+
+    class Meta:
+        ordering = ['priority', 'pubtime']
+endsnippet
+
+
+snippet dj_model_new "to make dj model" !b
+class ${1:model_name}(models.Model):
+    ${2:charfield} = models.CharField(max_length=50)
+    ${3:priority} = models.IntegerField(default=1)
+    ${4:pubtime} = models.DateTimeField(auto_now_add=True)
+    ${5:completed} = models.BooleanField(default=False)
+
+    def __unicode__(self):
+        return u'%d %s' % (self.id, self.${6:charfield})
+
+    class Meta:
+        ordering = ['priority', 'pubtime']
+endsnippet
+
+
+
+snippet dj_admin_import "dj admin import" !b
+from django.contrib import admin
+
+endsnippet
+
+
+snippet dj_admin_model_new "to make dj admin model" !b
+class ${1:ModelAdmin}(admin.ModelAdmin):
+    list_display = ('${4}', '', '', '', '')
+
+admin.site.register(${2:Todo}, ${3:ModelAdmin})  
+
+endsnippet
+
+
+snippet dj_view_import "dj view import" !b
+from django.http import HttpResponse
+from django.http import HttpResponseRedirect 
+from django.shortcuts import render_to_response
+from django.template.context import RequestContext 
+
+endsnippet
+
+
+snippet dj_view_new "dj new view" !b
+def ${1:index}(request):
+    ${2:objects= Todo.objects.all()}
+
+    return render_to_response("${3:index.html}",{"${4:name1}":${5:objects}${6:,"name2":object2}},context_instance=RequestContext(request))
+
+endsnippet
+
+
+snippet dj_view_post "dj view POST" !b
+if request.method=="POST":
+    todo = Todo.objects.get(id= request.POST['listid'])
+    todo.completed = not todo.completed
+    todo.save()
+
+endsnippet
+
+
+snippet dj_china_time "dj setup china timezone" !b
+TIME_ZONE = 'Asia/Shanghai'
+endsnippet
+
+
+snippet append_array "append array" !b
+${1:array}.append(${2:one item})
+endsnippet

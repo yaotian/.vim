@@ -87,7 +87,7 @@ autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79
 autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79
 
@@ -296,7 +296,8 @@ endif
 " setup for golang
 set rtp+=$GOROOT/misc/vim
 autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist 
-autocmd FileType go autocmd BufWritePre <buffer> Fmt   "automatically format the code"
+"autocmd FileType go autocmd BufWritePre <buffer> Fmt   "automatically format the code"
+au FileType go autocmd BufWritePre <buffer> Fmt
 
 
 " this is for the text aligning
