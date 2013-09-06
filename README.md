@@ -12,8 +12,6 @@ will be good for you.
 
 ## Git related
 
-
-
 #### Most of the time we are writing code so we need:
 ## Code Completions
 
@@ -29,10 +27,11 @@ Such as completions for variable names and function names(neocomplcache), expand
 
 * `Tab`  -> Rotate across the completion list
 * `Tab` -> Expand snippets or jump to the next placeholder of snippet
-* `shit + Tab` -> This is really the Tab
+* `shift + Tab` -> This is really the Tab
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
 * `Ctrl` + `tab` -> Call ultimate snippets list
 
+* `Ctrl` + `j` -> Call zen-coding expansion on html tags
 
 ### Dependencies
 
@@ -52,6 +51,10 @@ sudo apt-get install vim-gtk               # Ubuntu
 
 [Movie teaching zencoding.vim](http://mattn.github.com/zencoding-vim/)
 
+### Screenshots
+
+![Completions](https://raw.github.com/yaotian/.vim/master/screenshots/completions.gif)
+![Snippets](https://raw.github.com/yaotian/.vim/master/screenshots/snippets.gif)
 
 #### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
@@ -95,7 +98,6 @@ sudo apt-get install vim-gtk               # Ubuntu
 * `F4` -> Toggle Indent Guides 
 * `F6` -> Format code
 
-
 ## IDE features
 
 * [nerdtree](http://github.com/scrooloose/nerdtree) - A tree explorer plugin for navigating the filesystem.
@@ -113,7 +115,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 yaourt -S ack ctags                  # ArchLinux
 sudo apt-get install ack-grep ctags  # Ubuntu
 brew install ack ctags               # OS X
-sudo easy_install autopep8           
+sudo easy_install autopep8
 
 ```
 

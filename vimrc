@@ -247,6 +247,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " Keybindings for plugin toggle
+<<<<<<< HEAD
+=======
+nmap <F5> :TagbarToggle<cr>
+nmap <F6> :NERDTreeToggle<cr>
+>>>>>>> 0b6b895a931e9d0c87e01652d9d87ae7c85ffc38
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nnoremap <leader>a :Ack
@@ -322,6 +327,7 @@ endfunction
 
 " 粘贴代码，代码前会自动加indent，解决这个问题的
 :set pastetoggle=<F10>
+<<<<<<< HEAD
 
 
 "代码格式优化化
@@ -353,3 +359,5 @@ func FormartSrc()
 endfunc
 "结束定义FormartSrc
 
+=======
+>>>>>>> 0b6b895a931e9d0c87e01652d9d87ae7c85ffc38
