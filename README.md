@@ -13,6 +13,7 @@ will be good for you.
 ## Git related
 
 * test
+* test2
 
 #### Most of the time we are writing code so we need:
 ## Code Completions
