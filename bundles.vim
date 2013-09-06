@@ -62,12 +62,12 @@ Bundle 'nvie/vim-togglemouse'
 " web backend
 Bundle '2072/PHP-Indenting-for-VIm'
 "Bundle 'tpope/vim-rails'
-Bundle 'beyondwords/vim-jinja2'
+Bundle 'lepture/vim-jinja'
 "Bundle 'digitaltoad/vim-jade'
 
 " web front end
 Bundle 'othree/html5.vim'
-Bundle 'tpope/vim-haml'
+" Bundle 'tpope/vim-haml'
 Bundle 'nono/jquery.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
@@ -75,6 +75,7 @@ Bundle 'kchmck/vim-coffee-script'
 "Bundle 'wavded/vim-stylus'
 Bundle 'vim-scripts/jsbeautify'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
+
 
 "对代码进行对其
 Bundle 'godlygeek/tabular'
@@ -128,7 +129,4 @@ Bundle 'jmcantrell/vim-virtualenv'
 " -------------
 
 Bundle 'vim-scripts/vimwiki'
-
-"对齐
-Bundle 'godlygeek/tabular'
 
