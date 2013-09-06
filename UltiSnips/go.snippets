@@ -1,0 +1,14 @@
+snippet current_dir "cd to current dir" !b 
+file, _ := exec.LookPath(os.Args[0])
+dir, _ := path.Split(file)
+os.Chdir(dir)
+endsnippet
+
+snippet print "fmt print" !b
+var out = fmt.Println
+endsnippet
+
+snippet not_dead "让select中的死循环别block" !b
+case <-time.After(time.Second * 3): // Ensure no block by other chan
+	out("Hi Robot, Pleas Wake up")
+endsnippet
