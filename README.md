@@ -14,6 +14,15 @@ will be good for you.
 
 * :Gwrite
 * :Gcommit   and !wq
+* :Gstatus
+
+## hot tips
+* <leader>ee   # to open vimrc file
+* <leader>dd   # to open markdown document folder
+* <leader>,n
+* <leader>,t
+
+
 
 #### Most of the time we are writing code so we need:
 ## Code Completions
