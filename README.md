@@ -1,4 +1,4 @@
-'s Vim config
+Yaotian's Vim config
 ==================
 
 I use `vundle` to manage my plugins, which makes my `.vim` directory clean
@@ -146,11 +146,6 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 * `Alt` + `1~9` -> Switch between multiple buffers
 * `Ctrl` + `h/j/k/l` -> Moving between spilt windows
 * `:Ack` or `<leader>` + `a` -> Toggle Ack searching
-
-### Screenshots
-
-![Vim IDE 1](https://raw.github.com/yaotian/.vim/master/screenshots/vim.jpg)
-![Vim IDE 2](https://raw.github.com/yaotian/.vim/master/screenshots/vim2.jpg)
 
 ## Other Utils
 
