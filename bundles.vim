@@ -15,7 +15,7 @@ Bundle 'yaotian/zhengyaotian'
 "------------------
 Bundle 'Shougo/neocomplcache'
 "Bundle 'garbas/vim-snipmate'
-Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
 "Bundle 'honza/snipmate-snippets'
 Bundle 'mattn/zencoding-vim'
 " snipmate dependencies
@@ -45,7 +45,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 "--------------
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
-"Bundle 'humiaozuzu/TabBar'
+Bundle 'humiaozuzu/TabBar'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
