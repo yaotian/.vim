@@ -8,6 +8,8 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
+
+Bundle 'yaotian/zhengyaotian'
 "------------------
 " Code Completions
 "------------------
