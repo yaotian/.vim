@@ -127,6 +127,7 @@ yaourt -S ack ctags                  # ArchLinux
 sudo apt-get install ack-grep ctags  # Ubuntu
 brew install ack ctags               # OS X
 sudo easy_install autopep8           # This is for code format
+go get github.com/nsf/gocode      # for golang  note: need setup GOPATH
 
 ```
 
