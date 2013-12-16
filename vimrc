@@ -357,3 +357,4 @@ func FormartSrc()
 endfunc
 "结束定义FormartSrc
 
+let NERDTreeDirArrows = 0
