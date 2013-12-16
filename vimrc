@@ -17,7 +17,7 @@ map <silent> <leader>py :e ~/.vim/bundle/snipmate-snippets/snippets/python.snipp
 map <silent> <leader>html :e ~/.vim/bundle/snipmate-snippets/snippets/html.snippets<cr>
 
 
-map <silent> <leader>zz :e ~/.vim/bundle/zhengyaotian<cr>
+map <silent> <leader>zz :e ~/.vim/bundle/zhengyaotian.com/site/markdown/<cr>
 
 
 

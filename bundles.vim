@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 
-Bundle 'yaotian/zhengyaotian'
+Bundle 'yaotian/zhengyaotian.com'
 "------------------
 " Code Completions
 "------------------
