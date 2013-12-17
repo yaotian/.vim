@@ -28,13 +28,13 @@ printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
 for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv -f $i $i.backup; done
 
 # install ivim
-printf '\033[0;34m%s\033[0m\n' "Cloning ivim..."
-rm -rf $HOME/ivim
-git clone git://github.com/yaotian/.vim.git $HOME/.vim
+printf '\033[0;34m%s\033[0m\n' "Cloning yaotian vim..."
+rm -rf $HOME/.vim
+git clone https://github.com/yaotian/.vim.git $HOME/.vim
 ln -s $HOME/.vim/vimrc $HOME/.vim/.vimrc
 
 printf '\033[0;34m%s\033[0m\n' "Installing Vundle..."
-git clone git://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 
 printf '\033[0;34m%s\033[0m\n' "Installing font for powerline..."
