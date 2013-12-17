@@ -20,11 +20,11 @@ Yaotian's Vim config
 * <leader>,t   # to open function list
 * <leader>,q   # to quickly quite
 * <leader>,a   # to search
+* <leader>,j   # to check javascript using jshint
 
 * `<leader>` + `w` -> Beginning of the word.
 * `<leader>` + `f` + `{char}` -> Find {char} to the right.
 
-#### Most of the time we are writing code so we need:
 ## Code Completions
 
 Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(vim-smartinput) and fast expand expressions to HTML(ZenCoding).
