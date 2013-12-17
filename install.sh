@@ -36,8 +36,6 @@ ln -s $HOME/.vim/vimrc $HOME/.vim/.vimrc
 printf '\033[0;34m%s\033[0m\n' "Installing Vundle..."
 git clone git://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
-printf '\033[0;34m%s\033[0m\n' "Installing hybrid theme..."
-git clone git://github.com/w0ng/vim-hybrid.git $HOME/.vim/bundle/vim-hybrid
 
 printf '\033[0;34m%s\033[0m\n' "Installing font for powerline..."
 mkdir $HOME/.fonts
