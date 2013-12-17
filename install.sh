@@ -31,6 +31,11 @@ which ctags || sudo -E apt-get install exuberant-ctags
 printf '\033[0;34m%s\033[0m\n' "Check if golang exists..."
 which go || sudo -E apt-get install golang
 
+
+printf '\033[0;34m%s\033[0m\n' "Check if npm exists..."
+which npm || sudo -E apt-get install nodejs npm
+
+
 # back up existing vim stuff
 printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
 for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv -f $i $i.backup; done
