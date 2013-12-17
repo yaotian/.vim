@@ -17,11 +17,27 @@ printf '\033[0;34m%s\033[0m\n' '                      '
 # check requirements
 printf '\033[0;34m%s\033[0m\n' "Checking requirements for vim..."
 printf '\033[0;34m%s\033[0m\n' "Checking vim version..."
-vim --version | grep 7.3 || vim --version | grep 7.4 || die "Your vim's version is too low!\nPlease download higher version(7.3+) from http://www.vim.org/download.php"
+# vim --version | grep 7.3 || vim --version | grep 7.4 || die "Your vim's version is too low!\nPlease download higher version(7.3+) from http://www.vim.org/download.php"
+vim --version | grep 7.3 || vim --version | grep 7.4 || sudo -E apt-get install vim
+
 printf '\033[0;34m%s\033[0m\n' "Checking if git exists..."
-which git || die "No git installed!\nPlease install git from http://git-scm.com/downloads/"
+# which git || die "No git installed!\nPlease install git from http://git-scm.com/downloads/"
+which git || sudo -E apt-get install git
+
 printf '\033[0;34m%s\033[0m\n' "Check if ctags exists..."
-which ctags || warn "No ctags installed!\nPlease install ctags form http://ctags.sourceforge.net/ after ivim intallation!"
+# which ctags || warn "No ctags installed!\nPlease install ctags form http://ctags.sourceforge.net/ after intallation!"
+which ctags || sudo -E apt-get install exuberant-ctags
+
+printf '\033[0;34m%s\033[0m\n' "Check if golang exists..."
+which go || sudo -E apt-get install golang
+
+
+printf '\033[0;34m%s\033[0m\n' "Check if npm exists..."
+which npm || sudo -E apt-get install nodejs npm
+
+printf '\033[0;34m%s\033[0m\n' "Check if jshint exists..."
+which jshint || sudo -E npm install jshint -g
+
 
 # back up existing vim stuff
 printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
