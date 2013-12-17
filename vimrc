@@ -364,3 +364,4 @@ let NERDTreeDirArrows = 0
 
 
 
+map <leader>j :JSHint<cr>

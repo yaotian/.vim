@@ -1,13 +1,10 @@
 Yaotian's Vim config
 ==================
 
-I use `vundle` to manage my plugins, which makes my `.vim` directory clean
-and tidy. If you are new to vim, the following two posts
 
-* [Vim Introduction and Tutorial](http://blog.interlinked.org/tutorials/vim_tutorial.html)
-* [Vim plugins I use](http://mirnazim.org/writings/vim-plugins-i-use/) 
+## Installation
 
-will be good for you.
+    curl -L https://raw.github.com/yaotian/.vim/master/install.sh|bash
 
 
 ## Git related
@@ -18,11 +15,14 @@ will be good for you.
 
 ## hot tips
 * <leader>ee   # to open vimrc file
-* <leader>dd   # to open markdown document folder
-* <leader>,n
-* <leader>,t
+* <leader>zz   # to open markdown document folder
+* <leader>,n   # to open file list
+* <leader>,t   # to open function list
+* <leader>,q   # to quickly quite
+* <leader>,a   # to search
 
-
+* `<leader>` + `w` -> Beginning of the word.
+* `<leader>` + `f` + `{char}` -> Find {char} to the right.
 
 #### Most of the time we are writing code so we need:
 ## Code Completions
@@ -30,10 +30,8 @@ will be good for you.
 Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(vim-smartinput) and fast expand expressions to HTML(ZenCoding).
 
 * [neocomplcache](http://github.com/Shougo/neocomplcache) - Ultimate auto completion system for Vim.
-* [snipMate](https://github.com/garbas/vim-snipmate) - Plugin for using TextMate-style snippets in Vim.
-* [supertab](http://github.com/ervandew/supertab) - Perform all your vim insert mode completions with Tab.
 * [ZenCoding](http://github.com/mattn/zencoding-vim) - High speed HTML and CSS coding.
-* [delimitMate](http://github.com/Raimondi/delimitMate) - Provides auto-balancing and some expansions for parens, quotes, etc.
+* [UltiSnips]() -- A goodl snipMate replacement
 
 ### Shortcuts
 
@@ -54,12 +52,6 @@ yaourt -S gvim                             # ArchLinux
 sudo apt-get install vim-gtk               # Ubuntu
 ```
 
-### Tutorial
-
-``` vim
-:help zencoding
-```
-
 [Movie teaching zencoding.vim](http://mattn.github.com/zencoding-vim/)
 
 ### Screenshots
@@ -67,17 +59,11 @@ sudo apt-get install vim-gtk               # Ubuntu
 ![Completions](https://raw.github.com/yaotian/.vim/master/screenshots/completions.gif)
 ![Snippets](https://raw.github.com/yaotian/.vim/master/screenshots/snippets.gif)
 
-#### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
 
 * [matchit](http://github.com/tsaleh/vim-matchit) - Extended % matching for HTML, LaTeX, and many other languages.
 * [EasyMotion](https://github.com/Lokaltog/vim-easymotion) - Vim motions on speed!
 
-### Tutorial
-
-``` vim
-:help easymotion
-```
 
 ### Shortcuts
 * `%` -> Jump between brackets and html/xml tags
