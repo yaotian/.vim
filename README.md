@@ -17,6 +17,7 @@ Yaotian's Vim config
 * <leader>,j   # to check javascript using jshint
 
 
+
 * `<leader>` + `w` -> Beginning of the word.
 * `<leader>` + `f` + `{char}` -> Find {char} to the right.
 
