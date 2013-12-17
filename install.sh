@@ -35,6 +35,9 @@ which go || sudo -E apt-get install golang
 printf '\033[0;34m%s\033[0m\n' "Check if npm exists..."
 which npm || sudo -E apt-get install nodejs npm
 
+printf '\033[0;34m%s\033[0m\n' "Check if jslink exists..."
+which jslint || sudo -E npm install jslint -g
+
 
 # back up existing vim stuff
 printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
