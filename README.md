@@ -196,37 +196,6 @@ YAML         | js-yaml       | `npm install -g js-yaml`
    * PHP - Use soft-tabs with a two space indent(According to [Apache PHP Style Guide](http://svn.apache.org/repos/asf/shindig/trunk/php/docs/style-guide.html)).
    * Python - Use soft-tabs with a four space indent([PEP8](http://www.python.org/dev/peps/pep-0008/)).
 
-## Installation
-
-1. Backup your old vim configuration files:
-
-        mv ~/.vim ~/.vim.orig
-        mv ~/.vimrc ~/.vimrc.orig
-
-2. Clone and install this repo:
-
-        git clone git://github.com/yaotian/.vim.git ~/.vim
-        ln -s ~/.vim/vimrc ~/.vimrc
-        
-3. Setup `Vundle`:
-
-        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
-		
-        :BundleInstall
-
-## Install 3party sofewares
-This is to automatically format python codes
-
-
-Thst's it!
-
-## How to manage this vimrc?
-
-All plugins are listed in file `bundles.vim` with detailed comments, just add plugins as you like.
-
-Other configurations are also well organized in vimrc.
 
 ## Known issues
 
