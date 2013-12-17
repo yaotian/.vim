@@ -2,6 +2,8 @@ source ~/.vim/bundles.vim
 
 let mapleader=","
 
+
+map <leader>q :qall<cr>
 "-----------------------
 " Quick Open Files
 " -----------------------
@@ -360,7 +362,5 @@ endfunc
 " 这个解决在终端中NERDTree 的目录是乱码
 let NERDTreeDirArrows = 0
 
-" 这个是为新版本的vim-script
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
+
+
