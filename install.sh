@@ -43,7 +43,7 @@ which jshint || sudo -E npm install jshint -g
 printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
 for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv -f $i $i.backup; done
 
-# install ivim
+# install vim
 printf '\033[0;34m%s\033[0m\n' "Cloning yaotian vim..."
 rm -rf $HOME/.vim
 git clone https://github.com/yaotian/.vim.git $HOME/.vim
