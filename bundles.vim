@@ -68,10 +68,11 @@ Bundle 'lepture/vim-jinja'
 "Bundle 'digitaltoad/vim-jade'
 
 " web front end
-Bundle 'othree/html5.vim'
+"Bundle 'othree/html5.vim'
 " Bundle 'tpope/vim-haml'
 Bundle 'nono/jquery.vim'
-Bundle 'pangloss/vim-javascript'
+"Bundle 'pangloss/vim-javascript'
+Bundle 'lepture/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 "Bundle 'groenewege/vim-less'
 "Bundle 'wavded/vim-stylus'

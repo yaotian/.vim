@@ -62,7 +62,7 @@ set backspace=indent,eol,start                                    " More powerfu
 
 " display settings
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-set mouse=a                                                       " use mouse in all modes
+"set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
 "set nowrap                                                        " dont wrap lines
 set scrolloff=2                                                   " 2 lines above/below cursor when scrolling
@@ -357,4 +357,10 @@ func FormartSrc()
 endfunc
 "结束定义FormartSrc
 
+" 这个解决在终端中NERDTree 的目录是乱码
 let NERDTreeDirArrows = 0
+
+" 这个是为新版本的vim-script
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
