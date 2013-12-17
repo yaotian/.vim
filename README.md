@@ -15,7 +15,7 @@ Yaotian's Vim config
 * ,q   # to quickly quite
 * ,a   # to search
 * ,j   # to check javascript using jshint
-* F    # format the python codes 
+* F    # format the python codes
 
 
 * ,w -> Beginning of the word.
@@ -23,7 +23,7 @@ Yaotian's Vim config
 
 
 * gs  # to git status
-* ga  # to git add 
+* ga  # to git add
 * gc  # to git commit
 * gp  # to git push origin master
 
