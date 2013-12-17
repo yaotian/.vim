@@ -202,3 +202,15 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 * Compeletions are not well supported for statically typed languages(c/c++)
 * Snippets are not shown in completions popups
 * May has some conflicts with GVIM
+
+
+## Work aroud
+用git操作文件如果commit没有输入comment后出现这个问题
+
+        fatal: index file corrupt
+
+
+解决办法：
+
+        rm -rf .git/index 
+        git reset
