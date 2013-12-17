@@ -6,15 +6,8 @@ Yaotian's Vim config
 
     curl -L https://raw.github.com/yaotian/.vim/master/install.sh|bash
 
-
-## Git related
-
-* :Gwrite
-* :Gcommit   and !wq
-* :Gstatus
-* :Git push origin master
-
 ## hot tips
+
 * <leader>ee   # to open vimrc file
 * <leader>zz   # to open markdown document folder
 * <leader>,n   # to open file list
@@ -23,8 +16,17 @@ Yaotian's Vim config
 * <leader>,a   # to search
 * <leader>,j   # to check javascript using jshint
 
+
 * `<leader>` + `w` -> Beginning of the word.
 * `<leader>` + `f` + `{char}` -> Find {char} to the right.
+
+
+### Git related 
+
+* gs  # to git status
+* ga  # to git add 
+* gc  # to git commit
+* gp  # to git push origin master
 
 ## Code Completions
 
