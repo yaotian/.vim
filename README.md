@@ -8,20 +8,19 @@ Yaotian's Vim config
 
 ## hot tips
 
-* <leader>ee   # to open vimrc file
-* <leader>zz   # to open markdown document folder
-* <leader>,n   # to open file list
-* <leader>,t   # to open function list
-* <leader>,q   # to quickly quite
-* <leader>,a   # to search
-* <leader>,j   # to check javascript using jshint
+* ,ee   # to open vimrc file
+* ,zz   # to open markdown document folder
+* ,n   # to open file list
+* ,t   # to open function list
+* ,q   # to quickly quite
+* ,a   # to search
+* ,j   # to check javascript using jshint
+* F    # format the python codes 
 
 
-* `<leader>` + `w` -> Beginning of the word.
-* `<leader>` + `f` + `{char}` -> Find {char} to the right.
+* ,w -> Beginning of the word.
+* ,f + `{char}` -> Find {char} to the right.
 
-
-### Git related 
 
 * gs  # to git status
 * ga  # to git add 
