@@ -363,5 +363,14 @@ endfunc
 let NERDTreeDirArrows = 0
 
 
-
+"js
 map <leader>j :JSHint<cr>
+
+"git
+:nmap ga :Gwrite<cr>
+:nmap gc :Gcommit<cr>
+:nmap gs :Gstatus<cr>
+:nmap gp :Git push origin master<cr>
+
+
+

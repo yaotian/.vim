@@ -12,6 +12,7 @@ Yaotian's Vim config
 * :Gwrite
 * :Gcommit   and !wq
 * :Gstatus
+* :Git push origin master
 
 ## hot tips
 * <leader>ee   # to open vimrc file
