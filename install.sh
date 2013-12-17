@@ -21,7 +21,7 @@ vim --version | grep 7.3 || vim --version | grep 7.4 || die "Your vim's version 
 printf '\033[0;34m%s\033[0m\n' "Checking if git exists..."
 which git || die "No git installed!\nPlease install git from http://git-scm.com/downloads/"
 printf '\033[0;34m%s\033[0m\n' "Check if ctags exists..."
-which ctags || warn "No ctags installed!\nPlease install ctags form http://ctags.sourceforge.net/ after ivim intallation!"
+which ctags || warn "No ctags installed!\nPlease install ctags form http://ctags.sourceforge.net/ after intallation!"
 
 # back up existing vim stuff
 printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
