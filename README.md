@@ -16,6 +16,7 @@ Otherwise:
 
 * `<tab>` # It will trigger UltiSnips to code automatic  `<ctrl>j` to switch to next
 
+* F12   # to switch mouse mode
 
 * ,ee   # to open vimrc file
 * ,zz   # to open markdown document folder
