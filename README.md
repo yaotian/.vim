@@ -6,7 +6,7 @@ Yaotian's Vim config
 
 if you are using Ubuntu:
 
-    curl -L https://raw.github.com/yaotian/.vim/master/install_ubuntu.sh
+    curl -L https://raw.github.com/yaotian/.vim/master/install_ubuntu.sh|bash
 
 Otherwise:
 
