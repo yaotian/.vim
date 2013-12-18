@@ -5,22 +5,6 @@ from django.contrib.auth.models import User
 endsnippet
 
 
-snippet todo_model "new dj model" !b
-class Todo(models.Model):
-    user = models.ForeignKey(User)
-    todo = models.CharField(max_length=50)
-    completed = models.BooleanField(default=False)
-    priority = models.IntegerField(default=3)
-    pubtime = models.DateTimeField(auto_now_add=True)
-
-    def __unicode__(self):
-        return u'%d %s %s' % (self.id, self.todo, self.flag)
-
-    class Meta:
-        ordering = ['priority', 'pubtime']
-endsnippet
-
-
 snippet dj_model_new "to make dj model" !b
 class ${1:model_name}(models.Model):
     ${2:charfield} = models.CharField(max_length=50)
