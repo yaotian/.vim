@@ -32,6 +32,8 @@ which ctags || sudo -E apt-get install exuberant-ctags
 printf '\033[0;34m%s\033[0m\n' "Check if golang exists..."
 which go || sudo -E apt-get install golang
 
+printf '\033[0;34m%s\033[0m\n' "Check if gocode exists..."
+which gocode || go get -u github.com/nsf/gocode
 
 printf '\033[0;34m%s\033[0m\n' "Check if npm exists..."
 which npm || sudo -E apt-get install nodejs npm
