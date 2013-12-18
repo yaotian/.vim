@@ -14,6 +14,9 @@ Otherwise:
 
 ## hot tips
 
+* `<tab>` # It will trigger UltiSnips to code automatic  `<ctrl>j` to switch to next
+
+
 * ,ee   # to open vimrc file
 * ,zz   # to open markdown document folder
 * ,n   # to open file list
