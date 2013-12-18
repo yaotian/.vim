@@ -88,7 +88,12 @@ Otherwise:
 
         rm -rf .git/index 
         git reset
-        
+
+
+:Gcommit 有bug. 需要先:Gwrite 将文件加入其中， 然后才可以Gcommit写comment, 然后再push
+即： ga -> gc -> gp
+
+
 ## 如果你终端有乱码比如xshell， 可以尝试 property-> Terminal ->Translation -> encoding-> Unicode(UTF-8)
 
         
