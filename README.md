@@ -6,11 +6,11 @@ Yaotian's Vim config
 
 if you are using Ubuntu:
 
-    curl -L https://raw.github.com/yaotian/.vim/master/install_ubuntu.sh|bash
+        curl -L https://raw.github.com/yaotian/.vim/master/install_ubuntu.sh|bash
 
 Otherwise:
 
-    curl -L https://raw.github.com/yaotian/.vim/master/install.sh|bash
+        curl -L https://raw.github.com/yaotian/.vim/master/install.sh|bash
 
 ## hot tips
 
@@ -26,6 +26,11 @@ Otherwise:
 * ,a   # to search
 * ,j   # to check javascript using jshint
 * F    # format the python codes
+
+* ,,   # omni to show function menu list
+
+* ctrl+tab  # show Ultisnips Menu
+* snip     # start to write snip 
 
 
 * ,w -> Beginning of the word.
@@ -48,7 +53,6 @@ Otherwise:
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
 * `Ctrl` + `tab` -> Call ultimate snippets list
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
-
 
 
 * `F3` -> Toggle Gundo viewer
@@ -75,26 +79,26 @@ Otherwise:
 ## Known issues
 
 * Compeletions are not well supported for statically typed languages(c/c++)
-* Snippets are not shown in completions popups
-* May has some conflicts with GVIM
+    * Snippets are not shown in completions popups
+    * May has some conflicts with GVIM
 
 
 ## Work aroud
-用git操作文件如果commit没有输入comment后出现这个问题
+    用git操作文件如果commit没有输入comment后出现这个问题
 
-        fatal: index file corrupt
-
-
-解决办法：
-
-        rm -rf .git/index 
-        git reset
+    fatal: index file corrupt
 
 
-:Gcommit 有bug. 需要先:Gwrite 将文件加入其中， 然后才可以Gcommit写comment, 然后再push
-即： ga -> gc -> gp
+    解决办法：
+
+    rm -rf .git/index 
+    git reset
+
+
+    :Gcommit 有bug. 需要先:Gwrite 将文件加入其中， 然后才可以Gcommit写comment, 然后再push
+    即： ga -> gc -> gp
 
 
 ## 如果你终端有乱码比如xshell， 可以尝试 property-> Terminal ->Translation -> encoding-> Unicode(UTF-8)
 
-        
+

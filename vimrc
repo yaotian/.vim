@@ -236,9 +236,9 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType c setlocal omnifunc=ccomplete#Complete
 
 " SuperTab
-"let g:SuperTabDefultCompletionType='context'
+let g:SuperTabDefultCompletionType='context'
 
-let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
+let g:SuperTabDefaultCompletionType = '<C-X><C-O>'
 let g:SuperTabRetainCompletionType=2
 
 "----------------
@@ -410,3 +410,10 @@ autocmd FileType python nnoremap <S-f> :call Autopep8()<CR>
 function! Autopep8()
     call Preserve(':silent %!autopep8 --ignore=E501 -')
 endfunction
+
+"set omni to automation completion by pop menu and quickly list
+inoremap <leader>, <C-x><C-o>
+set completeopt=longest,menuone
+
+"UltiSnips to write snip
+:nmap snip :vsplit+UltiSnipsEdit<cr>

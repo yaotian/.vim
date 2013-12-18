@@ -15,7 +15,7 @@ Bundle 'yaotian/zhengyaotian.com'
 "------------------
 Bundle 'Shougo/neocomplcache'
 "Bundle 'garbas/vim-snipmate'
-"Bundle 'ervandew/supertab'
+Bundle 'ervandew/supertab'
 "Bundle 'honza/snipmate-snippets'
 Bundle 'mattn/zencoding-vim'
 " snipmate dependencies
