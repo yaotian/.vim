@@ -11,10 +11,6 @@ die ()
     exit 1
 }
 
-curtime ()
-{
-    date '+%Y-%m-%d-%H-%M-%S'   
-}
 
 printf '\033[0;34m%s\033[0m\n' "Thanks for installing yaotian's vim!"
 printf '\033[0;34m%s\033[0m\n' '                      '
@@ -53,9 +49,10 @@ which pep8 ||sudo -E easy_install pep8
 
 # back up existing vim stuff
 printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
-for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv -f $i $i.backup.$(curtime); done
-
-exit
+for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
+do [ -e $i ]
+        mv -f $i $i.backup.$RANDOM
+done
 
 # install vim
 printf '\033[0;34m%s\033[0m\n' "Cloning yaotian vim..."
