@@ -42,8 +42,8 @@ which jshint || sudo -E npm install jshint -g
 printf '\033[0;34m%s\033[0m\n' "Check if autopep8 exists..."
 which autopep8 || sudo -E easy_install autopep8
 
-printf '\033[0;34m%s\033[0m\n' "Check if flake exists..."
-which flake ||sudo -E easy_install flake
+printf '\033[0;34m%s\033[0m\n' "Check if pep8 exists..."
+which pep8 ||sudo -E easy_install pep8
 
 
 # back up existing vim stuff
