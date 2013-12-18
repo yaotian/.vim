@@ -55,6 +55,8 @@ which pep8 ||sudo -E easy_install pep8
 printf '\033[0;34m%s\033[0m\n' "Backing up current vim config..."
 for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv -f $i $i.backup.$(curtime); done
 
+exit
+
 # install vim
 printf '\033[0;34m%s\033[0m\n' "Cloning yaotian vim..."
 git clone https://github.com/yaotian/.vim.git $HOME/.vim
