@@ -88,3 +88,7 @@ Otherwise:
 
         rm -rf .git/index 
         git reset
+        
+## 如果你终端有乱码比如xshell， 可以尝试 property-> Terminal ->Translation -> encoding-> Unicode(UTF-8)
+
+        
