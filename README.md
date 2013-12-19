@@ -99,6 +99,15 @@ Otherwise:
     即： ga -> gc -> gp
 
 
-## 如果你终端有乱码比如xshell， 可以尝试 property-> Terminal ->Translation -> encoding-> Unicode(UTF-8)
+## 如果你终端有乱码比如xshell
+
+
+可以尝试 property-> Terminal ->Translation -> encoding-> Unicode(UTF-8)
+
+
+## If git has network problem, you may need set the git proxy
+
+        git config --global http.proxy <you proxy> 
+
 
 
