@@ -417,3 +417,10 @@ set completeopt=longest,menuone
 
 "UltiSnips to write snip
 :nmap snip :vsplit+UltiSnipsEdit<cr>
+inoremap <leader>s <C-Tab>
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsListSnippets="<F11>"
+

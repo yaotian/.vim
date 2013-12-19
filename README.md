@@ -29,7 +29,7 @@ Otherwise:
 
 * ,,   # omni to show function menu list
 
-* ctrl+tab  # show Ultisnips Menu
+* F11     # show Ultisnips list 
 * snip     # start to write snip 
 
 

@@ -15,3 +15,4 @@ do
   list_snippets_for $filetype
   echo
 done
+
