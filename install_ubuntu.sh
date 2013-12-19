@@ -29,6 +29,9 @@ printf '\033[0;34m%s\033[0m\n' "Check if ctags exists..."
 # which ctags || warn "No ctags installed!\nPlease install ctags form http://ctags.sourceforge.net/ after intallation!"
 which ctags || sudo -E apt-get install exuberant-ctags
 
+printf '\033[0;34m%s\033[0m\n' "Check if GOPATH exists..."
+grep $HOME/.bashrc GOPATH || echo "export PATH=$PATH:$GOPATH/bin" >> $HOME/.bashrc
+
 printf '\033[0;34m%s\033[0m\n' "Check if golang exists..."
 which go || sudo -E apt-get install golang
 
