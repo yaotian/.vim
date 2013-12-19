@@ -44,6 +44,7 @@ Otherwise:
 * gc  # to git commit
 * gp  # to git push origin master
 
+* zM zR 打开， 关闭所有folder
 
 ### Shortcuts
 
