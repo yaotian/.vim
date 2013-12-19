@@ -424,3 +424,19 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<F11>"
 
+" 从来没有过，所以去掉备份
+set nobackup
+
+
+
+"------------------------------------------------------------------------------------- 
+" folding 
+"------------------------------------------------------------------------------------- 
+set foldenable " turn on folding 
+set foldmethod=indent " make folding indent sensitive 
+set foldlevel=100 " don't autofold anything (but I can still fold manually) 
+set foldopen -=search " don't open folds when you search into them 
+set foldopen -=undo " don't open folds when you undo stuff 
+nnoremap  @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')
+
+
