@@ -1,0 +1,6 @@
+snippet for_files "To for list files and do something" !b
+for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
+do [ -e $i ] 
+	mv -f $i $i.backup.$RANDOM
+done
+endsnippet
