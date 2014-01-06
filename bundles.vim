@@ -115,10 +115,10 @@ Bundle 'ap/vim-css-color'
 " golang
 " ------------
 
-Bundle 'jnwhiteh/vim-golang'
+"Bundle 'jnwhiteh/vim-golang'
+Bundle 'cespare/vim-golang'
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
 
-filetype plugin indent on     " required!
 
 "-------------
 " Python
@@ -132,4 +132,7 @@ Bundle 'jmcantrell/vim-virtualenv'
 " -------------
 
 Bundle 'vim-scripts/vimwiki'
+
+
+Bundle 'Townk/vim-autoclose'
 

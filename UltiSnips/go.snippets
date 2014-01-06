@@ -12,3 +12,17 @@ snippet not_dead "让select中的死循环别block" !b
 case <-time.After(time.Second * 3): // Ensure no block by other chan
 	out("Hi Robot, Pleas Wake up")
 endsnippet
+
+snippet file_open "读取文件中字符串" !b
+content, err := ioutil.ReadFile("word.txt")
+if err != nil {
+    logs.Logger.Error(err)
+}
+data := strings.Split(string(content), "\n")
+endsnippet
+
+
+snippet rand_string "取随机的一个字符串" !b
+rand.Seed(time.Now().UnixNano())
+rand_word := data[rand.Intn(len(data))]
+endsnippet

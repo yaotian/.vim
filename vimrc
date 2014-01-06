@@ -18,10 +18,12 @@ map <silent> <leader>dj :e ~/.vim/bundle/snipmate-snippets/snippets/django.snipp
 map <silent> <leader>py :e ~/.vim/bundle/snipmate-snippets/snippets/python.snippets<cr>
 map <silent> <leader>html :e ~/.vim/bundle/snipmate-snippets/snippets/html.snippets<cr>
 
-
 map <silent> <leader>zz :e ~/.vim/bundle/zhengyaotian.com/site/markdown/<cr>
 
+" To do list 
+map <silent> <leader>todo :vsplit+e ~/todo_list.md<cr>
 
+map <silent> <leader>readme :vsplit+e ~/.vim/README.md<cr>
 
 
 " encoding dectection
@@ -301,7 +303,8 @@ endif
 set rtp+=$GOROOT/misc/vim
 autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist 
 "autocmd FileType go autocmd BufWritePre <buffer> Fmt   "automatically format the code"
-au FileType go autocmd BufWritePre <buffer> Fmt
+"au FileType go autocmd BufWritePre <buffer> Fmt
+autocmd BufWritePre *.go :Fmt
 
 
 " this is for the text aligning
@@ -422,7 +425,7 @@ inoremap <leader>s <C-Tab>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsListSnippets="<F11>"
+let g:UltiSnipsListSnippets="<leader>l"
 
 " 从来没有过，所以去掉备份
 set nobackup

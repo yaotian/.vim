@@ -29,7 +29,11 @@ Otherwise:
 
 * ,,   # omni to show function menu list
 
+* gd  # golang go to the definition of a method
+
 * F11     # show Ultisnips list 
+* <leader>l     # show Ultisnips list 
+
 * snip     # start to write snip 
 
 
