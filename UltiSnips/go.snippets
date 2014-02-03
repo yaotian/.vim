@@ -26,3 +26,23 @@ snippet rand_string "取随机的一个字符串" !b
 rand.Seed(time.Now().UnixNano())
 rand_word := data[rand.Intn(len(data))]
 endsnippet
+
+
+snippet sleep "time sleep" !b
+time.Sleep(1 * time.Second)
+endsnippet
+
+
+snippet panic "panic" !b
+defer func() {
+    if err := recover(); err != nil {
+        //do something
+    }
+}()
+endsnippet
+
+
+snippet time_format "time_format" !b
+const time_style = "Jan 2, 2006 at 3:04pm (MST)"
+time.Now().Format(time_style)
+endsnippet
