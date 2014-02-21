@@ -302,9 +302,8 @@ endif
 " setup for golang
 set rtp+=$GOROOT/misc/vim
 autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist 
-"autocmd FileType go autocmd BufWritePre <buffer> Fmt   "automatically format the code"
-"au FileType go autocmd BufWritePre <buffer> Fmt
-autocmd BufWritePre *.go :Fmt
+autocmd FileType go autocmd BufWritePre <buffer> Fmt   "automatically format the code"
+"autocmd BufWritePre *.go :Fmt
 
 
 " this is for the text aligning
@@ -435,11 +434,11 @@ set nobackup
 "------------------------------------------------------------------------------------- 
 " folding 
 "------------------------------------------------------------------------------------- 
-set foldenable " turn on folding 
-set foldmethod=indent " make folding indent sensitive 
-set foldlevel=100 " don't autofold anything (but I can still fold manually) 
-set foldopen -=search " don't open folds when you search into them 
-set foldopen -=undo " don't open folds when you undo stuff 
-nnoremap  @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')
+"set foldenable " turn on folding 
+"set foldmethod=indent " make folding indent sensitive 
+"set foldlevel=100 " don't autofold anything (but I can still fold manually) 
+"set foldopen -=search " don't open folds when you search into them 
+"set foldopen -=undo " don't open folds when you undo stuff 
+"nnoremap  @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')
 
 
