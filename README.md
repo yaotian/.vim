@@ -50,6 +50,9 @@ Otherwise:
 
 * zM zR 打开， 关闭所有folder
 
+### golang 
+* gd  #鼠标指定一个函数，gd打开一个新窗口并跳到定义这个函数的位置
+
 ### Shortcuts
 
 * `Tab`  -> Rotate across the completion list

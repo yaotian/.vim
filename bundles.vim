@@ -5,23 +5,46 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 
-Bundle 'yaotian/zhengyaotian.com'
+"=========Start==========
+
+Bundle 'SirVer/ultisnips'
+
+"Bundle 'nsf/gocode', {'rtp': 'vim/'}
+Bundle 'dgryski/vim-godef'
+
+Bundle 'Blackrush/vim-gocode'
+
+Bundle 'cespare/vim-golang'
+
+"Yaotian's blog
+Bundle 'yaotian/go_markdown_server'
+
+"=========End==========
+
+
+
+
+
+
 "------------------
 " Code Completions
 "------------------
 Bundle 'Shougo/neocomplcache'
-"Bundle 'garbas/vim-snipmate'
+Bundle 'mattn/emmet-vim'
+Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
-"Bundle 'honza/snipmate-snippets'
-Bundle 'mattn/zencoding-vim'
-" snipmate dependencies
+
+
+" snippets
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+"------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-Bundle 'vim-scripts/UltiSnips'
 
 "-----------------
 " Fast navigation
@@ -35,8 +58,6 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
-"Bundle 'Raimondi/delimitMate'
-Bundle 'kana/vim-smartinput'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 
@@ -44,8 +65,8 @@ Bundle 'nathanaelkane/vim-indent-guides'
 " IDE features
 "--------------
 Bundle 'scrooloose/nerdtree'
+Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
-"Bundle 'humiaozuzu/TabBar'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
@@ -55,53 +76,47 @@ Bundle 'bronson/vim-trailing-whitespace'
 
 "-------------
 " Other Utils
-" ------------
+"-------------
+" Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
 "----------------------------------------
-" web backend
+"------- web backend ---------
 Bundle '2072/PHP-Indenting-for-VIm'
 "Bundle 'tpope/vim-rails'
 Bundle 'lepture/vim-jinja'
 "Bundle 'digitaltoad/vim-jade'
 
-" web front end
-"Bundle 'othree/html5.vim'
+"------- web frontend ----------
+Bundle 'othree/html5.vim'
 " Bundle 'tpope/vim-haml'
-Bundle 'nono/jquery.vim'
-"Bundle 'pangloss/vim-javascript'
-Bundle 'lepture/vim-javascript'
+Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
-"Bundle 'groenewege/vim-less'
-"Bundle 'wavded/vim-stylus'
-Bundle 'vim-scripts/jsbeautify'
-Bundle 'vim-scripts/HTML-AutoCloseTag'
+Bundle 'nono/jquery.vim'
+" Bundle 'groenewege/vim-less'
+" Bundle 'wavded/vim-stylus'
+" Bundle 'nono/vim-handlebars'
 
-
-"对代码进行对其
-Bundle 'godlygeek/tabular'
-
-Bundle 'walm/jshint.vim'
-
-
-" Json
-Bundle 'vim-scripts/JSON.vim'
-
-
-" markup language
+"------- markup language -------
 Bundle 'tpope/vim-markdown'
+" Bundle 'timcharper/textile.vim'
 
-" Ruby
-"Bundle 'tpope/vim-endwise'
+"------- Ruby --------
+" Bundle 'tpope/vim-endwise'
 
-" Scheme
+"------- Go ----------
+"Bundle 'jnwhiteh/vim-golang'
+
+"------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
-"Bundle 'wlangstroth/vim-racket'
+" Bundle 'wlangstroth/vim-racket'
+" Bundle 'vim-scripts/VimClojure'
+" Bundle 'rosstimson/scala-vim-support'
 
 "--------------
-" Color Scheme
+" Color Schemes
 "--------------
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
@@ -109,30 +124,6 @@ Bundle 'rickharris/vim-monokai'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'ap/vim-css-color' 
+Bundle 'fisadev/fisa-vim-colorscheme'
 
-"-------------
-" golang
-" ------------
-
-"Bundle 'jnwhiteh/vim-golang'
-Bundle 'cespare/vim-golang'
-Bundle 'nsf/gocode', {'rtp': 'vim/'}
-
-
-"-------------
-" Python
-" ------------
-Bundle 'cburroughs/pep8'
-Bundle 'vim-scripts/pydoc.vim'
-Bundle 'jmcantrell/vim-virtualenv'
-
-"--------------
-" Other tools
-" -------------
-
-Bundle 'vim-scripts/vimwiki'
-
-
-Bundle 'Townk/vim-autoclose'
-
+filetype plugin indent on     " required!
