@@ -69,6 +69,8 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
+"没有这个goimports 不工作
+let g:gofmt_command = 'goimports'
 
 set rtp+=$GOROOT/misc/vim
 " autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist 
